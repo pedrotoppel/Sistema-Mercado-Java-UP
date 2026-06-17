@@ -36,7 +36,6 @@ public class PersistenciaService<T> {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public List<T> carregar() {
         File arquivo = new File(caminhoArquivo);
         if (!arquivo.exists()) {
