@@ -5,9 +5,6 @@ import model.Categoria;
 import util.LoggerService;
 import util.PersistenciaService;
 
-/**
- * Controller do CRUD de Categorias.
- */
 public class CategoriaController {
 
     private List<Categoria> categorias;

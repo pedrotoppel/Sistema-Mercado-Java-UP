@@ -2,10 +2,6 @@ package view;
 
 import java.util.Scanner;
 
-/**
- * Utilitario para ler dados do teclado com seguranca,
- * evitando que o programa quebre quando o usuario digita algo invalido.
- */
 public class Leitura {
 
     private final Scanner scanner;

@@ -1,8 +1,5 @@
 package model;
 
-/**
- * Subclasse de Pessoa (Heranca).
- */
 public class Cliente extends Pessoa {
 
     private static final long serialVersionUID = 1L;

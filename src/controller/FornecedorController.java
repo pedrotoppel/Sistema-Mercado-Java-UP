@@ -5,9 +5,6 @@ import model.Fornecedor;
 import util.LoggerService;
 import util.PersistenciaService;
 
-/**
- * Controller do CRUD de Fornecedores.
- */
 public class FornecedorController {
 
     private List<Fornecedor> fornecedores;

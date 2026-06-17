@@ -9,11 +9,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Servico de Persistencia generico usando Serializacao.
- * Salva e recupera listas de objetos em arquivos .dat dentro da pasta "dados".
- * Usa Generics (<T>) para funcionar com qualquer objeto Serializable do sistema.
- */
 public class PersistenciaService<T> {
 
     private final String caminhoArquivo;
@@ -30,7 +25,6 @@ public class PersistenciaService<T> {
         }
     }
 
-    // Salva a lista de objetos (Objeto -> Arquivo)
     public void salvar(List<T> lista) {
         try {
             FileOutputStream arquivo = new FileOutputStream(caminhoArquivo);
@@ -42,7 +36,6 @@ public class PersistenciaService<T> {
         }
     }
 
-    // Recupera a lista de objetos (Arquivo -> Objeto)
     @SuppressWarnings("unchecked")
     public List<T> carregar() {
         File arquivo = new File(caminhoArquivo);

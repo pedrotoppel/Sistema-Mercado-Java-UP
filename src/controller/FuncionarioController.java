@@ -5,9 +5,6 @@ import model.Funcionario;
 import util.LoggerService;
 import util.PersistenciaService;
 
-/**
- * Controller do CRUD de Funcionarios.
- */
 public class FuncionarioController {
 
     private List<Funcionario> funcionarios;

@@ -2,10 +2,6 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Categoria de um produto (ex.: Bebidas, Higiene).
- * Existe de forma independente -> usada em AGREGACAO com Produto.
- */
 public class Categoria implements Serializable {
 
     private static final long serialVersionUID = 1L;

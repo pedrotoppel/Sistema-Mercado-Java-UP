@@ -12,11 +12,6 @@ import model.ItemPedido;
 import model.Pedido;
 import model.Produto;
 
-/**
- * View de Pedidos.
- * Junta um Cliente (associacao) com varios Produtos (polimorfismo:
- * qualquer subclasse de Produto e tratada como Produto).
- */
 public class PedidoView {
 
     private final PedidoController controller;

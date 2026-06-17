@@ -2,11 +2,6 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * CLASSE ABSTRATA e SUPERCLASSE (Heranca).
- * Reune os atributos comuns a Cliente e Funcionario.
- * Implementa Serializable para poder ser salva em arquivo.
- */
 public abstract class Pessoa implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -5,10 +5,6 @@ import model.Cliente;
 import util.LoggerService;
 import util.PersistenciaService;
 
-/**
- * Controller do CRUD de Clientes.
- * Demonstra POLIMORFISMO DE SOBRECARGA no metodo buscar().
- */
 public class ClienteController {
 
     private List<Cliente> clientes;
