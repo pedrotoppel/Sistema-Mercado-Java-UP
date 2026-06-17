@@ -39,12 +39,10 @@ public class PedidoController {
         return pedido;
     }
 
-    // SOBRECARGA 1: adiciona um item informando a quantidade
     public void adicionarItem(Pedido pedido, Produto produto, int quantidade) {
         pedido.adicionarItem(new ItemPedido(produto, quantidade));
     }
 
-    // SOBRECARGA 2: adiciona um item assumindo quantidade 1 (mesmo nome, assinatura diferente)
     public void adicionarItem(Pedido pedido, Produto produto) {
         adicionarItem(pedido, produto, 1);
     }

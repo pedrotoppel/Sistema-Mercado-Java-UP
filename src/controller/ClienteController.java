@@ -27,7 +27,6 @@ public class ClienteController {
         return maior + 1;
     }
 
-    // CREATE
     public Cliente cadastrar(String nome, String cpf, String telefone, String email) {
         Cliente cliente = new Cliente(proximoId, nome, cpf, telefone, email);
         clientes.add(cliente);
@@ -37,12 +36,10 @@ public class ClienteController {
         return cliente;
     }
 
-    // READ (listagem)
     public List<Cliente> listar() {
         return clientes;
     }
 
-    // SOBRECARGA 1: buscar por ID
     public Cliente buscar(int id) {
         for (Cliente c : clientes) {
             if (c.getId() == id) {
@@ -52,7 +49,6 @@ public class ClienteController {
         return null;
     }
 
-    // SOBRECARGA 2: buscar por nome (mesmo nome de metodo, parametro diferente)
     public Cliente buscar(String nome) {
         for (Cliente c : clientes) {
             if (c.getNome().equalsIgnoreCase(nome)) {
@@ -62,7 +58,6 @@ public class ClienteController {
         return null;
     }
 
-    // UPDATE
     public boolean alterar(int id, String nome, String cpf, String telefone, String email) {
         Cliente c = buscar(id);
         if (c == null) {
@@ -77,7 +72,6 @@ public class ClienteController {
         return true;
     }
 
-    // DELETE
     public boolean excluir(int id) {
         Cliente c = buscar(id);
         if (c == null) {
