@@ -7,8 +7,8 @@ public class Cliente extends Pessoa {
     private String email;
 
     public Cliente(int id, String nome, String cpf, String telefone, String email) {
-        super(id, nome, cpf, telefone); // chama o construtor da superclasse
-        this.email = email;
+        super(id, nome, cpf, telefone);
+        setEmail(email);
     }
 
     // POLIMORFISMO DE SOBRESCRITA (@Override)

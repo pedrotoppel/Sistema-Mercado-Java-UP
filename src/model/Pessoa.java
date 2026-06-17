@@ -6,23 +6,20 @@ public abstract class Pessoa implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    // ENCAPSULAMENTO: atributos privados
     private int id;
     private String nome;
     private String cpf;
     private String telefone;
 
     public Pessoa(int id, String nome, String cpf, String telefone) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
+        setId(id);
+        setNome(nome);
+        setCpf(cpf);
+        setTelefone(telefone);
     }
 
-    // METODO ABSTRATO: cada filha define o proprio tipo
     public abstract String getTipo();
 
-    // GETTERS e SETTERS
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

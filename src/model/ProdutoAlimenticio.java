@@ -9,7 +9,7 @@ public class ProdutoAlimenticio extends Produto {
     public ProdutoAlimenticio(int id, String nome, double preco, int quantidade,
                               Categoria categoria, Fornecedor fornecedor, String dataValidade) {
         super(id, nome, preco, quantidade, categoria, fornecedor);
-        this.dataValidade = dataValidade;
+        setDataValidade(dataValidade);
     }
 
     @Override

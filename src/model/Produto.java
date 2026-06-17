@@ -11,23 +11,21 @@ public abstract class Produto implements Serializable, Descontavel {
     private String nome;
     private double preco;
     private int quantidade;
-    private Categoria categoria;   // AGREGACAO
-    private Fornecedor fornecedor; // AGREGACAO
+    private Categoria categoria;
+    private Fornecedor fornecedor;
 
     public Produto(int id, String nome, double preco, int quantidade,
                    Categoria categoria, Fornecedor fornecedor) {
-        this.id = id;
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidade = quantidade;
-        this.categoria = categoria;
-        this.fornecedor = fornecedor;
+        setId(id);
+        setNome(nome);
+        setPreco(preco);
+        setQuantidade(quantidade);
+        setCategoria(categoria);
+        setFornecedor(fornecedor);
     }
 
-    // METODO ABSTRATO: cada tipo de produto informa seu tipo
     public abstract String getTipoProduto();
 
-    // Preco final ja com o desconto aplicado (usa o metodo da interface)
     public double getPrecoFinal() {
         return preco - calcularDesconto();
     }

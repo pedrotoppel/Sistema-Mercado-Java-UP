@@ -10,8 +10,8 @@ public class Categoria implements Serializable {
     private String nome;
 
     public Categoria(int id, String nome) {
-        this.id = id;
-        this.nome = nome;
+        setId(id);
+        setNome(nome);
     }
 
     public int getId() { return id; }

@@ -11,9 +11,9 @@ public class Fornecedor implements Serializable {
     private String cnpj;
 
     public Fornecedor(int id, String nome, String cnpj) {
-        this.id = id;
-        this.nome = nome;
-        this.cnpj = cnpj;
+        setId(id);
+        setNome(nome);
+        setCnpj(cnpj);
     }
 
     public int getId() { return id; }

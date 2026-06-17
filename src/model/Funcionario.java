@@ -9,8 +9,8 @@ public class Funcionario extends Pessoa {
 
     public Funcionario(int id, String nome, String cpf, String telefone, String cargo, double salario) {
         super(id, nome, cpf, telefone);
-        this.cargo = cargo;
-        this.salario = salario;
+        setCargo(cargo);
+        setSalario(salario);
     }
 
     // POLIMORFISMO DE SOBRESCRITA

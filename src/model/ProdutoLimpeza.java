@@ -9,7 +9,7 @@ public class ProdutoLimpeza extends Produto {
     public ProdutoLimpeza(int id, String nome, double preco, int quantidade,
                           Categoria categoria, Fornecedor fornecedor, boolean toxico) {
         super(id, nome, preco, quantidade, categoria, fornecedor);
-        this.toxico = toxico;
+        setToxico(toxico);
     }
 
     @Override

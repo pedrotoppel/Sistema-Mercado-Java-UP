@@ -10,8 +10,8 @@ public class ItemPedido implements Serializable {
     private int quantidade;
 
     public ItemPedido(Produto produto, int quantidade) {
-        this.produto = produto;
-        this.quantidade = quantidade;
+        setProduto(produto);
+        setQuantidade(quantidade);
     }
 
     // Subtotal do item = preco final do produto x quantidade

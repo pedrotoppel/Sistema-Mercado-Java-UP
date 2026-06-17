@@ -9,7 +9,7 @@ public class ProdutoVestuario extends Produto {
     public ProdutoVestuario(int id, String nome, double preco, int quantidade,
                             Categoria categoria, Fornecedor fornecedor, String tamanho) {
         super(id, nome, preco, quantidade, categoria, fornecedor);
-        this.tamanho = tamanho;
+        setTamanho(tamanho);
     }
 
     @Override

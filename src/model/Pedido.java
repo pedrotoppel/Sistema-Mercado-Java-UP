@@ -15,8 +15,8 @@ public class Pedido implements Serializable {
     private String data;
 
     public Pedido(int id, Cliente cliente) {
-        this.id = id;
-        this.cliente = cliente;
+        setId(id);
+        setCliente(cliente);
         this.itens = new ArrayList<ItemPedido>();
         this.data = LocalDate.now().toString();
     }

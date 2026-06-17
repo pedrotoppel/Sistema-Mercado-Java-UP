@@ -25,3 +25,9 @@
 [2026-06-17T00:06:37.549022500] INFO - Pedido finalizado: ID 1 | total R$ 135,00
 [2026-06-17T00:07:07.942341500] INFO - Sistema encerrado
 [2026-06-17T00:07:13.407103700] INFO - Sistema iniciado
+[2026-06-17T10:48:41.512931200] INFO - Sistema iniciado
+[2026-06-17T10:49:12.933179700] INFO - Cliente cadastrado: Angelo (ID 2)
+[2026-06-17T10:49:55.748854900] INFO - Funcionario cadastrado: Nicolas (ID 2)
+[2026-06-17T10:51:06.452378100] INFO - Produto de vestuario cadastrado: Camisa de Basquete
+[2026-06-17T10:51:34.945858900] INFO - Pedido criado para o cliente: Angelo
+[2026-06-17T10:51:44.522193800] INFO - Pedido finalizado: ID 2 | total R$ 102,00
